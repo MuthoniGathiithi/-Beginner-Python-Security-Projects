@@ -46,13 +46,13 @@ else:
 
 #final analysis 
 print("\n  final analysis:")  
-if password_checks == 4:
+if password_checks ==5:
     print("Your password is strong! ✅")
 else:
     print("Your password is weak. ❌")
     print("Feedback:")
     for item in feedback:
-        print(f"- {item}")
+        print("-", item)
 if feedback:
     print("\nPlease consider the feedback to improve your password strength.")
     for item in feedback:
