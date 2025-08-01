@@ -1,0 +1,7 @@
+def caesar_encrypt(text, shift):
+    return ''.join(chr((ord(c)-97+shift)%26+97) if c.islower() else c for c in text)
+
+# Example usage
+message = "hello"
+encrypted = caesar_encrypt(message, 3)
+print(encrypted)  # Output: khoor
